@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(22, 58, 87);
+}
+
+
+.weather {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(41, 98, 145);
+    text-align: center;
+}
+.weather-principal {
+    width: 80%;
+}
+.weather-principal ul li {
+    list-style: none;
+}
+
+.weather-ubicacion {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.weather-fecha, .weather-desc {
+    font-size: 1.4rem;
+    color: white;
+}
+.weather-icon {
+    width: 250px;
+    height: 250px;
+}
+.weather-icon img{
+    width: 100%;
+}
+.weather-temp {
+    font-size: 5.4rem;
+    font-weight: bold;
+    color: white;
+}
+.search-ciudad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+    height: 35px;
+    background: white;
+    margin: 25px auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 5px;
+}
+.search-ciudad--input {
+    font-size: 1.6rem;
+    text-align: center;
+    border: 0;
+    outline: none;
+    appearance: none;
+    background: none;
+}
+.search-button {
+    border: 0;
+    background: none;
+}
+
+
+
+.todays-hightlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.weather-descriptions {
+    width: 100%;
+    min-width: 280px;
+    max-width: 320px;
+    height: 140px;
+    background: rgb(41, 98, 145);
+    margin: 10px;
+    border-radius: 3px;
+}
+.weather-descriptions h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 15px;
+    color: white;
+}
+.weather-descriptions p {
+    display: inline-block;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: white;
+}
+.weather-descriptions span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(209, 206, 206);
+    margin-left: 5px;
+}

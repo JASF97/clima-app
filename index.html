@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 620px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1000px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    
+</head>
+<body>
+    <div class="weather">
+        <form class="search-ciudad" id="search" action="">
+            <input class="search-ciudad--input" id="search-input" type="text" placeholder="Buscar ciudad">
+            <button class="search-button" type="submit" onsubmit="searchCiudad()"><img src="./icon/search_black_24dp.svg" alt=""></button>
+        </form>
+        <div class="weather-principal">
+            <h2 id="ubicacion" class="weather-ubicacion"></h2>
+            <p id="fecha-hora" class="weather-fecha"></p>
+            <img src="" alt="" id="icon" class="weather-icon">
+            <p id="temperatura" class="weather-temp"></p>
+            <p id="temp-description" class="weather-desc"></p>
+        </div>
+    </div>
+    <!-- <div class="card-weather-two">
+        <section class="mini-card--days">
+            <div class="card-days">
+                <h3>Tomorrow</h3>
+                <img src="" alt="">
+                <span>16°C</span>
+            </div>
+        </section>
+    </div> -->
+    <div class="todays-hightlights">
+        <article class="weather-descriptions">
+            <h3>Wind status</h3>
+            <p id="wind"></p><span>M/S</span>
+        </article>
+        <article class="weather-descriptions">
+            <h3>Humidity status</h3>
+            <p id="humidity"></p><span>%</span>
+        </article>
+        <article class="weather-descriptions">
+            <h3>Visibility status</h3>
+            <p id="visibility"></p><span>M</span>
+        </article>
+        <article class="weather-descriptions">
+            <h3>Pressure status</h3>
+            <p id="pressure"></p><span>hPa</span>
+        </article>
+    </div>
+</body>
+<script src='script.js'></script>
+</html>
